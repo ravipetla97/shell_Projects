@@ -23,5 +23,4 @@ for listing s3 buckets
    aws lambda list-functions
 
 #list of iam users
-
-    aws iam list-users | jq '[.Users[].UserName,.Users[].UserId'] 
+aws iam list-users | jq '[.Users[].UserName,.Users[].UserId'] 
