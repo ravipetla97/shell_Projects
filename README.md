@@ -8,4 +8,19 @@ This repository contains shell scripting projects from basics to advanced
       * number of lambada functions are there
       * number of iam roles are there in your organisation...
       It generates the full report of you organisation aws report so that you can provide this info to any dash board
-       
+     
+
+
+aws s3 ls 
+
+#list of ec2 instances
+echo "print list of ec2 instances::::::::"
+aws ec2 describe-instances | jq '[.Reservations[].Instances[].InstanceId,.Reservations[].Instances[].Tags[].Key,.Reservations[].Instances[].Tags[].Value]'
+
+#list of lambda functions
+echo "print list lambda functions::::"
+aws lambda list-functions
+
+#list of iam users
+echo "print list of iam users::::::::"
+aws iam list-users | jq '[.Users[].UserName,.Users[].UserId'] 
