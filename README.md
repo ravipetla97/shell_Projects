@@ -9,5 +9,5 @@ This repository contains shell scripting projects from basics to advanced
       * number of lambada functions are there
       * number of iam roles are there in your organisation...
 
-    It generates the full report of you organisation aws report so that you can     provide this info to any dash board
+  It generates the full report of you organisation aws report so that you can     provide this info to any dash board
        
