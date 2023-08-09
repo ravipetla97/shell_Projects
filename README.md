@@ -51,6 +51,7 @@ Deployment
 To deploy this project run
 
   ./create_file.sh
+  
 The script will guide you through the process of creating a file and adding content to it: 
 Enter the name of the file you want to create. 
 If the file already exists, you will be asked if you want to overwrite it.
